@@ -2,24 +2,50 @@ import React from 'react';
 
 const Swipe: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-gray-100">
-
-      <main className="flex-1 p-10">
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center">
-            <h1 className="text-3xl font-semibold">Emilia, 23</h1>
-            <span className="ml-2 text-green-500">•</span>
-          </div>
-          <div className="text-gray-600">London • 3km</div>
-        </div>
-        <section className="bg-white rounded-lg shadow p-6">
+    <div className="flex flex-col lg:flex-row min-h-screen bg-gray-50">
+     
+      <main className="flex-1 p-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="bg-white rounded-lg shadow p-6">
           <img
-            className="rounded-lg w-full h-80 object-cover mb-4"
-            src="path_to_user_image"
-            alt="Emilia"
+            className="rounded-lg w-full h-96 object-cover mb-4"
+            src="path_to_main_image"
+            alt="Main"
           />
+          <div className="flex gap-2">
+            <img
+              className="w-20 h-20 object-cover rounded-lg"
+              src="path_to_image_1"
+              alt="Sub 1"
+            />
+            <img
+              className="w-20 h-20 object-cover rounded-lg"
+              src="path_to_image_2"
+              alt="Sub 2"
+            />
+            <img
+              className="w-20 h-20 object-cover rounded-lg"
+              src="path_to_image_3"
+              alt="Sub 3"
+            />
+            <img
+              className="w-20 h-20 object-cover rounded-lg"
+              src="path_to_image_4"
+              alt="Sub 4"
+            />
+          </div>
+        </div>
+        <div className="bg-white rounded-lg shadow p-6">
+          <div className="flex justify-between items-center mb-4">
+            <div>
+              <h1 className="text-2xl font-semibold">Emilia, 23</h1>
+              <p className="text-gray-500">London • 3km</p>
+            </div>
+            <div className="flex items-center">
+              <span className="ml-2 text-green-500">•</span>
+            </div>
+          </div>
           <p className="text-xl mb-4">"I am so beautiful and I am waiting for a prince"</p>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+          <div className="grid grid-cols-2 gap-4 mb-6">
             <div className="flex items-center">
               <span className="w-4 h-4 bg-red-500 rounded-full mr-2"></span>
               <p>Hair: black</p>
@@ -80,7 +106,7 @@ const Swipe: React.FC = () => {
             <button className="px-6 py-2 bg-red-500 text-white rounded-md">X</button>
             <button className="px-6 py-2 bg-green-500 text-white rounded-md">Message</button>
           </div>
-        </section>
+        </div>
       </main>
     </div>
   );
