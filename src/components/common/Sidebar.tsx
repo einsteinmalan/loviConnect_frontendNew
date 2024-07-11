@@ -11,8 +11,8 @@ const Sidebar: React.FC = () => {
           alt="Profile"
           className="rounded-full mx-auto"
         />
-        <h2 className="text-xl font-semibold mt-2">Floyd Miles</h2>
-        <p className="text-gray-600">Westheimer Rd, Santa</p>
+        <h2 className="text-xl font-semibold mt-2">Lucas Yaw</h2>
+        <p className="text-gray-600">WKasoa, Amanfro</p>
       </div>
       <nav className="navigation">
         <ul>
@@ -49,6 +49,11 @@ const Sidebar: React.FC = () => {
           <li>
             <NavLink to="/video-call" className="block p-2 text-gray-700 hover:bg-gray-100 rounded">
               Video Call
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/settings" className="block p-2 text-gray-700 hover:bg-gray-100 rounded">
+              Settings
             </NavLink>
           </li>
         </ul>

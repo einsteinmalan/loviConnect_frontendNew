@@ -37,6 +37,7 @@ import Messages from './pages/Messages';
 import Activities from './pages/Activities';
 import Profile from './pages/Profile';
 import VideoCall from './pages/VideoCall';
+import Settings from './pages/Settings';
 
 const App: React.FC = () => {
   return (
@@ -50,6 +51,7 @@ const App: React.FC = () => {
           <Route path="/activities" element={<Activities/>} />
           <Route path="/profile" element={<Profile/>} />
           <Route path="/video-call" element={<VideoCall/>} />
+          <Route path="/settings" element={<Settings/>} />
           <Route path="/" element={<Dashboard/>} />
         </Routes>
       </Layout>
