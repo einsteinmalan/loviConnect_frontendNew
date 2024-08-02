@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home: React.FC = () => {
+const Login: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-purple-100">
       <div className="bg-white p-10 rounded-lg shadow-lg max-w-4xl w-full">
@@ -75,4 +75,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Login;

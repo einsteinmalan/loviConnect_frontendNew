@@ -31,7 +31,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from './components/common/Layout';
 import Dashboard from './pages/Dashboard';
-import Home from './pages/Home';
+import Login from './pages/Login';
 import Swipe from './pages/Swipe';
 import Messages from './pages/Messages';
 import Activities from './pages/Activities';
@@ -45,7 +45,7 @@ const App: React.FC = () => {
       <Layout>
         <Routes>
           <Route path="/dashboard" element={<Dashboard/>} />
-          <Route path="/home" element={<Home/>} />
+          <Route path="/login" element={<Login/>} />
           <Route path="/swipe" element={<Swipe/>} />
           <Route path="/messages" element={<Messages/>} />
           <Route path="/activities" element={<Activities/>} />

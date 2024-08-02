@@ -22,8 +22,8 @@ const Sidebar: React.FC = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/home" className="block p-2 text-gray-700 hover:bg-gray-100 rounded">
-              Home
+            <NavLink to="/login" className="block p-2 text-gray-700 hover:bg-gray-100 rounded">
+              Login
             </NavLink>
           </li>
           <li>
