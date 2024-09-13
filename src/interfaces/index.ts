@@ -63,32 +63,32 @@ export type OtherUser = {
 
 export type NotificationType =
   | {
-    date: string;
-    notified: {
-      id: number;
-      email: string;
-      userName: string;
-      firstName: string;
-      lastName: string;
-      experience: number;
-      birthDate: string;
-      lastSeen: string;
-      bio: string | null;
-      age: number;
-    };
-    notifier: {
-      id: number;
-      email: string;
-      userName: string;
-      firstName: string;
-      lastName: string;
-      experience: number;
-      birthDate: string;
-      lastSeen: string;
-      bio: string | null;
-      age: number;
-    };
-    type: "consult" | "match" | "like" | "unlike" | "message" | "empty" | "noNew";
-  }
+      date: string;
+      notified: {
+        id: number;
+        email: string;
+        userName: string;
+        firstName: string;
+        lastName: string;
+        experience: number;
+        birthDate: string;
+        lastSeen: string;
+        bio: string | null;
+        age: number;
+      };
+      notifier: {
+        id: number;
+        email: string;
+        userName: string;
+        firstName: string;
+        lastName: string;
+        experience: number;
+        birthDate: string;
+        lastSeen: string;
+        bio: string | null;
+        age: number;
+      };
+      type: "consult" | "match" | "like" | "unlike" | "message";
+    }
   | { type: "empty" }
   | { type: "noNew" };
