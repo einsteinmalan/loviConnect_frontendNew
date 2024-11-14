@@ -26,18 +26,18 @@ import { useNavigate } from "react-router-dom";
 import { useUser } from "../../components/auth"; // Adjust the import according to your directory structure
 import SplashScreen from "../../components/SplashScreen"; // Adjust the import according to your directory structure
 
-const withAuth = (Component: React.ComponentType<any>) => (props: Record<string, any>) => {
-  const [{ user }, { error, loading }] = useUser();
-  const navigate = useNavigate();
+const withAuth =
+  (Component: React.ComponentType<any>) => (props: Record<string, any>) => {
+    const [{ user }, { error, loading }] = useUser();
+    const navigate = useNavigate();
 
-  if (loading) return <SplashScreen />;
-  if (!user || error) {
-    navigate("/login");
-    return <SplashScreen />;
-  }
+    if (loading) return <SplashScreen />;
+    if (!user || error) {
+      navigate("/login");
+      return <SplashScreen />;
+    }
 
-  return <Component {...props} />;
-};
+    return <Component {...props} />;
+  };
 
 export default withAuth;
-

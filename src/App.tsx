@@ -16,15 +16,15 @@ const App: React.FC = () => {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/dashboard" element={<Dashboard/>} />
+        <Route path="/swipe" element={<Swipe/>} />
+          {/* <Route path="/dashboard" element={<Dashboard/>} /> */}
           <Route path="/login" element={<Login/>} />
-          <Route path="/swipe" element={<Swipe/>} />
           <Route path="/messages" element={<Messages/>} />
           <Route path="/activities" element={<Activities/>} />
           <Route path="/profile" element={<Profile/>} />
           <Route path="/video-call" element={<VideoCall/>} />
           <Route path="/settings" element={<Settings/>} />
-          <Route path="/" element={<Dashboard/>} />
+          <Route path="/" element={<Swipe/>} />
         </Routes>
       </Layout>
     </Router>

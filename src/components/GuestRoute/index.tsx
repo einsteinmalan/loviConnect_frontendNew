@@ -1,7 +1,7 @@
 import React, { ComponentType } from "react";
 import { useNavigate } from "react-router-dom";
-import { useUser } from "../../components/auth"; // Adjust the import according to your directory structure
-import SplashScreen from "../../components/SplashScreen"; // Adjust the import according to your directory structure
+import { useUser } from "../../components/auth"; 
+import SplashScreen from "../../components/SplashScreen"; 
 
 interface UserState {
   loggedIn: boolean;

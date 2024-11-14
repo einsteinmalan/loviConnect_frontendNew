@@ -1,7 +1,5 @@
 import { LoadingAnimation } from "../ui/Icons/LoadingIcon";
 
-
-
 const Button: React.FC<{
   loading?: boolean;
   isSubmit?:  boolean;
